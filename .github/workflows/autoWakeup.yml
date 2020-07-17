@@ -11,6 +11,7 @@ on:
   #    - master
   schedule:
   # - cron: "*/18 0-15 * * *"
+  # - cron: "0 0/25 0-16 * * ?"
   # 每天8点唤醒一次，后面又LeanCloud定时任务唤醒    
     - cron: "0 0 * * *"
   watch:
@@ -41,7 +42,7 @@ jobs:
         git config --global user.email 928264247@qq.com
         git config --global user.name loenzo
         git add .
-        git commit -m "Successfully Wake" -a
+        git commit -m "Successfully WakeUp Valine-Admin-Server" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
